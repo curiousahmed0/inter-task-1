@@ -1,5 +1,12 @@
+* {
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
 .custom-height {
-  height: 90px;
+  height: auto;
+  width: 100vw;
   position: fixed;
   z-index: 1;
 }
@@ -8,11 +15,8 @@
 }
 
 .custom-text {
-  width: 500px;
-  position: absolute;
-  z-index: 0;
-  top: 200px;
-  left: 200px;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .custom-coach-btn {
@@ -45,7 +49,7 @@
   border: 1px solid transparent;
   border-radius: 20px;
   width: 320px;
-  height: 240px;
+  height: 280px;
   padding: 5px;
 
   box-sizing: border-box;
@@ -55,14 +59,9 @@
   color: #9a99a5;
 }
 
-.custom-img {
-  width: 650px;
-  height: 500px;
-  padding-left: 100px;
-}
-
 .custom-inner-2 p {
   color: #9a99a5;
+  background-color: white;
 }
 .custom-inner-2 li {
   color: #9a99a5;
@@ -108,7 +107,7 @@
 
 .custom-footer {
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: #212529;
   overflow-x: hidden;
 }
@@ -139,10 +138,11 @@
 .custom-tab-box {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   width: 350px;
-  height: 230px;
+  height: 300px;
   border: 1px solid transparent;
   border-radius: 10px;
   margin-right: 20px;
+  margin-bottom: 60px;
 }
 
 .custom-tab-box h2 {
@@ -178,6 +178,7 @@
   background: linear-gradient(to bottom, #1b90e9, #57d1f8);
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5);
@@ -191,4 +192,82 @@
 
 .custom-apply-btn {
   width: 200px;
+}
+
+.custom-padding-main {
+  padding: 2rem;
+  padding-top: 10rem;
+}
+
+.custom-coach-btn {
+  background-color: #007bff;
+  border: none;
+}
+
+.custom-inner-div {
+  border-radius: 0.5rem;
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+}
+
+@media (max-width: 576px) {
+  .custom-padding-main {
+    padding: 1rem;
+    padding-top: 10rem;
+  }
+  .mr-mobile {
+    margin-left: 10px;
+  }
+}
+
+.custom-coach-btn {
+  background-color: #007bff;
+  border: none;
+}
+
+.custom-inner-2 {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.custom-user-card {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .custom-padding-main {
+    padding: 1rem;
+    padding-top: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-height {
+    height: 90px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+  }
+  .custom-text {
+    position: absolute;
+    z-index: 0;
+    top: 200px;
+    left: 200px;
+    width: 500px;
+  }
+  * {
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .custom-footer {
+    width: 100%;
+    height: 400px;
+    background-color: #212529;
+    overflow-x: hidden;
+  }
 }

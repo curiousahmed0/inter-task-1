@@ -2,10 +2,10 @@ import React from "react";
 
 const Tabs = () => {
   return (
-    <div className="w-75 ">
+    <div className=" ">
       <div className="d-flex justify-content-center">
         <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item" role="presentation">
+          <li class="nav-item overflow-hidden" role="presentation">
             <a
               class="nav-link active"
               id="simple-tab-0"
@@ -26,7 +26,7 @@ const Tabs = () => {
               </div>
             </a>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item overflow-hidden" role="presentation">
             <a
               class="nav-link"
               id="simple-tab-1"
@@ -47,7 +47,7 @@ const Tabs = () => {
               </div>
             </a>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item overflow-hidden" role="presentation">
             <a
               class="nav-link"
               id="simple-tab-2"
@@ -68,7 +68,7 @@ const Tabs = () => {
               </div>
             </a>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item overflow-hidden" role="presentation">
             <a
               class="nav-link"
               id="simple-tab-3"
@@ -98,7 +98,7 @@ const Tabs = () => {
           role="tabpanel"
           aria-labelledby="simple-tab-0"
         >
-          <div className="container">
+          <div className="container mr-mobile">
             <div className="row d-flex justify-content-center">
               <div className="col-3 custom-tab-box">
                 <div className="row">
@@ -214,8 +214,8 @@ const Tabs = () => {
           role="tabpanel"
           aria-labelledby="simple-tab-1"
         >
-          <div className="container">
-            <div className="row">
+          <div className="container mr-mobile">
+            <div className="row d-flex justify-content-center">
               <div className="col-3 custom-tab-box">
                 <div className="row">
                   <div className="col-6">
@@ -330,8 +330,8 @@ const Tabs = () => {
           role="tabpanel"
           aria-labelledby="simple-tab-2"
         >
-          <div className="container">
-            <div className="row">
+          <div className="container mr-mobile">
+            <div className="row d-flex justify-content-center">
               <div className="col-3 custom-tab-box">
                 <div className="row">
                   <div className="col-6">
@@ -434,8 +434,8 @@ const Tabs = () => {
           role="tabpanel"
           aria-labelledby="simple-tab-3"
         >
-          <div className="container">
-            <div className="row">
+          <div className="container mr-mobile">
+            <div className="row d-flex justify-content-center">
               <div className="col-3 custom-tab-box">
                 <div className="row">
                   <div className="col-6">
