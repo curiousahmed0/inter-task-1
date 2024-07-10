@@ -1,6 +1,7 @@
 import React from "react";
 
 const Tabs = () => {
+  const tabs = [{ id: 1 }, { id: 2 }, { id: 3 }];
   return (
     <div className=" ">
       <div className="d-flex justify-content-center">
@@ -100,111 +101,45 @@ const Tabs = () => {
         >
           <div className="container mr-mobile">
             <div className="row d-flex justify-content-center">
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+              {tabs.map((tab) => {
+                return (
+                  <div className="col-3 custom-tab-box" key={tab.id}>
+                    <div className="row">
+                      <div className="col-6">
+                        <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+                      </div>
+                      <div className="col-6">
+                        <img
+                          src="/images/pickleball.png"
+                          className="mt-1 me-3"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum eaque iusto ducimus a repudiandae ratione autem
+                      doloremque quia accusantium magnam.
+                    </p>
+                    <div className="stars">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div className="mt-1 d-flex flex-row">
+                      <img
+                        src="/images/location.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                      <p>Missouri</p>
+                    </div>
                   </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/pickleball.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/pickleball.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/pickleball.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -216,111 +151,45 @@ const Tabs = () => {
         >
           <div className="container mr-mobile">
             <div className="row d-flex justify-content-center">
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+              {tabs.map((tab) => {
+                return (
+                  <div className="col-3 custom-tab-box" key={tab.id}>
+                    <div className="row">
+                      <div className="col-6">
+                        <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+                      </div>
+                      <div className="col-6">
+                        <img
+                          src="/images/tennis.png"
+                          className="mt-1 me-3"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum eaque iusto ducimus a repudiandae ratione autem
+                      doloremque quia accusantium magnam.
+                    </p>
+                    <div className="stars">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div className="mt-1 d-flex flex-row">
+                      <img
+                        src="/images/location.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                      <p>Missouri</p>
+                    </div>
                   </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/tennis.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/tennis.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/tennis.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -332,99 +201,45 @@ const Tabs = () => {
         >
           <div className="container mr-mobile">
             <div className="row d-flex justify-content-center">
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+              {tabs.map((tab) => {
+                return (
+                  <div className="col-3 custom-tab-box" key={tab.id}>
+                    <div className="row">
+                      <div className="col-6">
+                        <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+                      </div>
+                      <div className="col-6">
+                        <img
+                          src="/images/golf.png"
+                          className="mt-1 me-3"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum eaque iusto ducimus a repudiandae ratione autem
+                      doloremque quia accusantium magnam.
+                    </p>
+                    <div className="stars">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div className="mt-1 d-flex flex-row">
+                      <img
+                        src="/images/location.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                      <p>Missouri</p>
+                    </div>
                   </div>
-                  <div className="col-6">
-                    <img src="/images/golf.png" className="mt-1 me-3" alt="" />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img src="/images/golf.png" className="mt-1 me-3" alt="" />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img src="/images/golf.png" className="mt-1 me-3" alt="" />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -436,111 +251,45 @@ const Tabs = () => {
         >
           <div className="container mr-mobile">
             <div className="row d-flex justify-content-center">
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+              {tabs.map((tab) => {
+                return (
+                  <div className="col-3 custom-tab-box" key={tab.id}>
+                    <div className="row">
+                      <div className="col-6">
+                        <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
+                      </div>
+                      <div className="col-6">
+                        <img
+                          src="/images/bowling.png"
+                          className="mt-1 me-3"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum eaque iusto ducimus a repudiandae ratione autem
+                      doloremque quia accusantium magnam.
+                    </p>
+                    <div className="stars">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div className="mt-1 d-flex flex-row">
+                      <img
+                        src="/images/location.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                      />
+                      <p>Missouri</p>
+                    </div>
                   </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/bowling.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/bowling.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
-              <div className="col-3 custom-tab-box">
-                <div className="row">
-                  <div className="col-6">
-                    <h2 className="mt-3 ms-3">Type: 30 minutes</h2>
-                  </div>
-                  <div className="col-6">
-                    <img
-                      src="/images/bowling.png"
-                      className="mt-1 me-3"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum eaque iusto ducimus a repudiandae ratione autem
-                  doloremque quia accusantium magnam.
-                </p>
-                <div className="stars">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-                <div className="mt-1 d-flex flex-row">
-                  <img
-                    src="/images/location.png"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                  <p>Missouri</p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>

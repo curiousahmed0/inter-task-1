@@ -1,6 +1,7 @@
 import React from "react";
 
 const Aboutus = () => {
+  const coaches = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
   return (
     <div class="container d-flex flex-column align-items-center text-center">
       <div class="row w-100 justify-content-center">
@@ -27,66 +28,28 @@ const Aboutus = () => {
       </div>
       <h1 class="fw-bold mt-5 mb-5 overflow-hidden">Popular Coaches</h1>
       <div class="row w-100 justify-content-center align-items-center d-flex">
-        <div class="col-lg-3 col-md-6 mb-4 justify-content-center align-items-center d-flex">
-          <div className="custom-user-card d-flex flex-column bg-white text-black">
-            <div></div>
-            <img src="/images/golf_5.png" alt="" />
-            <div className="d-flex flex-column align-items-center">
-              <p className="fs-2 mt-5">Alex Martin</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, expedita!
-              </p>
-              <button className="mb-3">View Profile</button>
+        {coaches.map((coach) => {
+          return (
+            <div
+              class="col-lg-3 col-md-6 mb-4 justify-content-center align-items-center d-flex"
+              key={coach.id}
+            >
+              <div className="custom-user-card d-flex flex-column bg-white text-black">
+                <div></div>
+                <img src="/images/golf_5.png" alt="" />
+                <div className="d-flex flex-column align-items-center">
+                  <p className="fs-2 mt-5">Alex Martin</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid, expedita!
+                  </p>
+                  <button className="mb-3">View Profile</button>
+                </div>
+                <div className="pt-2 ps-2">READ MORE</div>
+              </div>
             </div>
-            <div className="pt-2 ps-2">READ MORE</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 justify-content-center align-items-center d-flex">
-          <div className="custom-user-card d-flex flex-column bg-white text-black">
-            <div></div>
-            <img src="/images/golf_5.png" alt="" />
-            <div className="d-flex flex-column align-items-center">
-              <p className="fs-2 mt-5">Alex Martin</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, expedita!
-              </p>
-              <button className="mb-3">View Profile</button>
-            </div>
-            <div className="pt-2 ps-2">READ MORE</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 justify-content-center align-items-center d-flex">
-          <div className="custom-user-card d-flex flex-column bg-white text-black">
-            <div></div>
-            <img src="/images/golf_5.png" alt="" />
-            <div className="d-flex flex-column align-items-center">
-              <p className="fs-2 mt-5">Alex Martin</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, expedita!
-              </p>
-              <button className="mb-3">View Profile</button>
-            </div>
-            <div className="pt-2 ps-2">READ MORE</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 justify-content-center align-items-center d-flex">
-          <div className="custom-user-card d-flex flex-column bg-white text-black">
-            <div></div>
-            <img src="/images/golf_5.png" alt="" />
-            <div className="d-flex flex-column align-items-center">
-              <p className="fs-2 mt-5">Alex Martin</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, expedita!
-              </p>
-              <button className="mb-3">View Profile</button>
-            </div>
-            <div className="pt-2 ps-2">READ MORE</div>
-          </div>
-        </div>
+          );
+        })}
       </div>
 
       <h1 class="fw-bold mt-5 mb-5 overflow-hidden">Pictures</h1>
