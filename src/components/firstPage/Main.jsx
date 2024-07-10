@@ -4,14 +4,14 @@ const Main = () => {
   return (
     <div class="container custom-padding-main d-flex flex-column align-items-center text-center">
       <div class="custom-text mb-4">
-        <p class="fw-bolder fs-4 overflow-hidden">
+        <p class="fw-bolder fs-4 overflow-hidden ">
           Explore Local Coaches, Classes & Events
         </p>
         <p class="fs-6 fw-bold overflow-hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A asperiores
           voluptate aspernatur, perferendis sunt minima.
         </p>
-        <button class="btn btn-primary custom-coach-btn mt-3 pt-2 d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary custom-coach-btn mt-3 pt-2 d-flex justify-content-center align-items-center overflow-hidden">
           Explore Coaches <span class="fs-3">&rarr;</span>
         </button>
       </div>

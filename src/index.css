@@ -176,12 +176,10 @@
   border: 1px solid transparent;
   border-radius: 30px;
   background: linear-gradient(to bottom, #1b90e9, #57d1f8);
-  margin-right: 10px;
-  margin-left: 10px;
+
   margin-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .custom-image-container {
@@ -246,13 +244,24 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991px) {
+  .nav-btns {
+    flex-direction: column;
+  }
+  .nav-btns button {
+    margin-bottom: 5px;
+    width: 90px;
+  }
+}
+
+@media (min-width: 992px) {
   .custom-height {
     height: 90px;
     width: 100vw;
     position: fixed;
     z-index: 1;
   }
+
   .custom-text {
     position: absolute;
     z-index: 0;
