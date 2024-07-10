@@ -40,8 +40,8 @@ const Aboutus = () => {
                 <div className="d-flex flex-column align-items-center">
                   <p className="fs-2 mt-5">Alex Martin</p>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid, expedita!
+                    Lorem ipsum dolor sit amet consectetur adipisicing ashjhs
+                    elit. Aliquid, expedita!
                   </p>
                   <button className="mb-3">View Profile</button>
                 </div>
